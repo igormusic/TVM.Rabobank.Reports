@@ -8,6 +8,7 @@ using System.IO;
 using System.Web.UI.HtmlControls;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
+using Reports.Model;
 
 namespace Reports
 {
@@ -53,12 +54,16 @@ namespace Reports
 
         private static ConnectionInfo GetConnectionInfo()
         {
+
+            var builder = ApplicationConfiguration.SQLConnectInfo;
+
             var connectionInfo = new ConnectionInfo();
-            connectionInfo.DatabaseName = "CreditPlus";
-            connectionInfo.IntegratedSecurity = true;
-            connectionInfo.UserID = "sa";
-            connectionInfo.ServerName = "WIN2012";
-            connectionInfo.Password = "@Rinama011";
+            connectionInfo.DatabaseName = builder.InitialCatalog;
+            connectionInfo.IntegratedSecurity = builder.IntegratedSecurity;
+            connectionInfo.UserID = builder.UserID;
+            connectionInfo.Password = builder.Password;
+            connectionInfo.ServerName = builder.DataSource;
+            
             return connectionInfo;
         }
 
