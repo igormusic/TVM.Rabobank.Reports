@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -158,6 +159,10 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="CustomerDetail.asp" />
+    <Content Include="CustomerInclude.asp" />
+    <Content Include="footer.asp" />
+    <Content Include="_CustomerDetail.asp" />
     <Content Include="ReportPreview.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
@@ -224,6 +229,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CustomerDetail.asp.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerDetail.asp.designer.cs">
+      <DependentUpon>CustomerDetail.asp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ApplicationConfiguration.cs" />
     <Compile Include="ReportPreview.aspx.cs">
       <DependentUpon>ReportPreview.aspx</DependentUpon>

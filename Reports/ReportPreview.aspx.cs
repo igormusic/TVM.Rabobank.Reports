@@ -46,7 +46,7 @@ namespace Reports
                     ShowFeaturedText(String.Format("Error {0}", errorArgs.ErrorMessage));
             });
 
-            //CrystalReportViewer.ReportSource = report;
+            CrystalReportViewer.DataBind();
 
             CrystalReportViewer.RefreshReport();
 

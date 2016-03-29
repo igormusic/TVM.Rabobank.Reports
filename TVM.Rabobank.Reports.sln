@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports", "Reports\Reports.csproj", "{FFC1F219-2D6F-4E49-B73C-B60D8DD847E6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2710F043-5179-49A8-BC8F-818BF4E619C0}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Rabo2016\Deployment (Bak)\SUEUC4110104\Server\CreditPlus\Www\CustomerInclude.asp = ..\..\Rabo2016\Deployment (Bak)\SUEUC4110104\Server\CreditPlus\Www\CustomerInclude.asp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

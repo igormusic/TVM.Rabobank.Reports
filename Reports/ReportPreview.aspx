@@ -37,7 +37,7 @@
         </nav>
 
         <div>
-            <CR:CrystalReportViewer ID="CrystalReportViewer" runat="server" AutoDataBind="True"  Height="50px" ReportSourceID="CrystalReportSource" ReuseParameterValuesOnRefresh="True" ToolPanelWidth="200px" Width="350px" />
+            <CR:CrystalReportViewer ID="CrystalReportViewer" runat="server"   Height="50px" ReportSourceID="CrystalReportSource" ReuseParameterValuesOnRefresh="True" ToolPanelWidth="200px" Width="350px" />
             <CR:CrystalReportSource ID="CrystalReportSource" runat="server">
             </CR:CrystalReportSource>
         </div>
